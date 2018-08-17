@@ -1,0 +1,12 @@
+accounts:
+  - user: '17079224723'
+    password: 'ladfroei4'
+  - user: '17079224154'
+    password: 'eaaadfuhwoeh7'
+  - user: '17079224293'
+    password: 'ywejfrhbkjwnf'
+    ## 请添加自己的微博账号和密码，以上仅为示例
+yundama:
+  user: 'adfkjh'
+  password: '123456'
+  ## 云打码账户密码，以上仅为示例
