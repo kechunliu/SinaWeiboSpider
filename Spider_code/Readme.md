@@ -1,6 +1,7 @@
 init - 初始化，（会清零redis上的内存，除了cookies)，之后会把找帖子里面的用户的任务添进redis(话题帖子的1-500页）（t|a)
 
-start - 1.可以修改， 有u的话，爬用户，有f的话，爬用户的follow，有t的话，爬topic的帖子，有a的话，爬topic的名人堂
+start - 
+	1.可以修改， 有u的话，爬用户，有f的话，爬用户的follow，有t的话，爬topic的帖子，有a的话，爬topic的名人堂
 
 	2.爬用户会把用户的很多信息爬出来，并且开始把该用户的关注任务给添进redis,在kafka上输出用户信息,kafka输出的都为json,
 	  用户输出的type对应的value为user_info,source会说明该用户是来自哪里,comment是来自topic的帖子区，super是来自名人堂
