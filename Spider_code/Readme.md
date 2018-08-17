@@ -1,8 +1,8 @@
-init 
+**Init** 
 	
 	初始化，（会清零redis上的内存，除了cookies)，之后会把找帖子里面的用户的任务添进redis(话题帖子的1-500页）（t|a)
 
-start 
+**Start**
 
 	1.可以修改， 有u的话，爬用户，有f的话，爬用户的follow，有t的话，爬topic的帖子，有a的话，爬topic的名人堂
 
@@ -19,10 +19,15 @@ start
 	6.主要代码在/src/weibo_cn_async里面
 	
 /src/redis_cookies - 为串行实现redis操作，及cookies操作的代码
+
 /src/weibo_redis   - 为并行实现redis操作，及cookies操作的代码
+
 consumer.py - 可以从零开始获取kafka的数据，数据存在/json/data.json里面
+
 consumer_with_offset - 通过groupID来获取kafka的数据（再次使用该代码的时候，会从上次结束的地方开始）
+
 code_recognize   -   实现获取验证码的代码，用的云打码（每次验证要1分钱左右）
+
 /conf/account.yaml 存了微博密码与云打码的密码
 
 
