@@ -6,5 +6,5 @@
 ## 实现框架及细节
 
 <p align="center">
-<img src="https://github.com/kechunliu/SinaWeiboSpider/SpiderFramework.jpg" width="750">
+<img src="https://github.com/kechunliu/SinaWeiboSpider/blob/master/SpiderFramework.jpg" width="750">
 </p>
